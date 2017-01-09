@@ -210,8 +210,8 @@ void handle_root() {
     reply += F(" ");
     reply += F(BUILD_NOTES);
 
-    reply += F("<TR><TD>Core Version:<TD>");
-    reply += ESP.getCoreVersion();
+//  reply += F("<TR><TD>Core Version:<TD>");
+//  reply += ESP.getCoreVersion();
 
     reply += F("<TR><TD>Unit:<TD>");
     reply += Settings.Unit;

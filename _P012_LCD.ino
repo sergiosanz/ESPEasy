@@ -161,7 +161,7 @@ boolean Plugin_012(byte function, struct EventStruct *event, String& string)
           lcd = new LiquidCrystal_I2C(Settings.TaskDevicePluginConfig[event->TaskIndex][0], col, row);
         }
         // Setup LCD display
-        lcd->init();                      // initialize the lcd
+        lcd->begin();                      // initialize the lcd
         lcd->backlight();
         lcd->print("ESP Easy");
         displayTimer = Settings.TaskDevicePluginConfig[event->TaskIndex][2];
